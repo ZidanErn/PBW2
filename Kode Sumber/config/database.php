@@ -42,8 +42,6 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-
-        // AHMAD FAZA AL FARISI 6706220050 D3IF 46-04
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),

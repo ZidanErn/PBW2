@@ -11,7 +11,6 @@
                 </div>
 
                 <!-- Navigation Links -->
-                {{-- AHMAD FAZA AL FARISI 6706220050 D3IF 46-04 --}}
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}

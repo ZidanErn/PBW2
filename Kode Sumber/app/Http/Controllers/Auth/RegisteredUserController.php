@@ -29,7 +29,6 @@ class RegisteredUserController extends Controller
      * @throws \Illuminate\Validation\ValidationException
      */
 
-    // AHMAD FAZA AL FARISI (6706220050)
     public function store(Request $request): RedirectResponse
     {
         $request->validate([

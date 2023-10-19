@@ -25,7 +25,6 @@ class LoginRequest extends FormRequest
      * @return array<string, \Illuminate\Contracts\Validation\Rule|array|string>
      */
 
-    // AHMAD FAZA AL FARISI (6706220050)
     public function rules(): array
     {
         return [
@@ -60,7 +59,6 @@ class LoginRequest extends FormRequest
      * @throws \Illuminate\Validation\ValidationException
      */
 
-    // AHMAD FAZA AL FARISI (6706220050)
     public function ensureIsNotRateLimited(): void
     {
         if (! RateLimiter::tooManyAttempts($this->throttleKey(), 5)) {
