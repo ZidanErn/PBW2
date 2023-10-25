@@ -38,7 +38,7 @@
                             <input type="number" name="jumlahKoleksi" id="jumlahKoleksi" value="{{ $collection->jumlahKoleksi }}" class="mt-1 p-2 border border-gray-300 rounded-md w-full">
                         </div>
 
-                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Update Pengguna</button>
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Update Koleksi</button>
                     </form>
                 </div>
             </div>
