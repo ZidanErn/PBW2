@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use App\DataTables\UsersDataTable;
 
+// 6706223117 Muhammad Zidan Ernandiaz D3IF - 4604
 
 class UserController extends Controller
 {
@@ -62,7 +63,8 @@ class UserController extends Controller
             'jenisKelamin' => $request->jenisKelamin,
         ]);
 
-        
+        // 6706223117 Muhammad Zidan Ernandiaz D3IF - 4604
+
 
         //Auth::login($user);
 
@@ -114,6 +116,7 @@ class UserController extends Controller
         ]);
         return redirect()->route('user.daftarPengguna');
     }
+// 6706223117 Muhammad Zidan Ernandiaz D3IF - 4604
 
     /**
      * Remove the specified resource from storage.

@@ -28,7 +28,7 @@ class User extends Authenticatable
         'agama',
         'jenisKelamin'
     ];
-
+// 6706223117 Muhammad Zidan Ernandiaz D3IF - 4604
     /**
      * The attributes that should be hidden for serialization.
      *

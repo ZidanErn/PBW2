@@ -53,7 +53,7 @@
                                 </tr>
                         </table>
                         <div class="flex justify-end">
-                                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Update Koleksi</button>
+                                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Update Pengguna</button>
                         </div>
                     </form>
                     </div>
