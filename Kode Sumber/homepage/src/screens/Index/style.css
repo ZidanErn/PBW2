@@ -1,0 +1,1025 @@
+.index {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.index .div {
+  background-color: #ffffff;
+  height: 4836px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+.index .footer {
+  background-color: #1e232b;
+  height: 670px;
+  left: 0;
+  position: absolute;
+  top: 4166px;
+  width: 1920px;
+}
+
+.index .content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  position: relative;
+  top: 99px;
+  width: 1920px;
+}
+
+.index .top {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 381px;
+  justify-content: center;
+  position: relative;
+  width: 1377.17px;
+}
+
+.index .social-media-icon {
+  position: relative;
+  width: 157.17px;
+}
+
+.index .logo {
+  height: 196.02px;
+  position: relative;
+  width: 300px;
+}
+
+.index .overlap-group {
+  height: 196px;
+  position: relative;
+}
+
+.index .group {
+  height: 99px;
+  left: 101px;
+  position: absolute;
+  top: 51px;
+  width: 98px;
+}
+
+.index .img {
+  height: 31px;
+  left: 94px;
+  position: absolute;
+  top: 137px;
+  width: 112px;
+}
+
+.index .group-2 {
+  height: 31px;
+  left: 94px;
+  position: absolute;
+  top: 32px;
+  width: 112px;
+}
+
+.index .group-3 {
+  height: 69px;
+  left: 58px;
+  position: absolute;
+  top: 0;
+  width: 183px;
+}
+
+.index .group-4 {
+  height: 65px;
+  left: 66px;
+  position: absolute;
+  top: 131px;
+  width: 173px;
+}
+
+.index .group-5 {
+  height: 46px;
+  left: 0;
+  position: absolute;
+  top: 77px;
+  width: 300px;
+}
+
+.index .group-6 {
+  height: 22px;
+  left: 1px;
+  position: absolute;
+  top: 89px;
+  width: 297px;
+}
+
+.index .group-7 {
+  height: 26px;
+  left: 75px;
+  position: absolute;
+  top: 86px;
+  width: 151px;
+}
+
+.index .group-8 {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/65322e976b17d0ccb481631b/img/image-15.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 121px;
+  left: 89px;
+  position: absolute;
+  top: 37px;
+  width: 121px;
+}
+
+.index .middle {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 128px;
+  justify-content: center;
+  position: relative;
+  width: 1378px;
+}
+
+.index .contact {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  width: 266px;
+}
+
+.index .sub-title {
+  height: 24px;
+  position: relative;
+  width: 100px;
+}
+
+.index .line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 23px;
+  width: 98px;
+}
+
+.index .text-wrapper {
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 4.05px;
+  line-height: 11.6px;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  white-space: nowrap;
+}
+
+.index .line-2 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: 98px;
+}
+
+.index .jl-bengawan-no {
+  color: transparent;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 33.9px;
+  position: relative;
+  width: 266px;
+}
+
+.index .span {
+  color: #ffffff;
+}
+
+.index .text-wrapper-2 {
+  color: #e1b068;
+}
+
+.index .newslatter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  width: 590px;
+}
+
+.index .join-our-mailing {
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.3px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 306px;
+}
+
+.index .button {
+  all: unset;
+  box-sizing: border-box;
+  height: 68px;
+  position: relative;
+  width: 590px;
+}
+
+.index .email {
+  align-items: center;
+  border: 1px solid;
+  border-color: #848484;
+  display: flex;
+  gap: 10px;
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  width: 358px;
+}
+
+.index .input {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  margin-top: -1px;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index .div-wrapper {
+  all: unset;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 358px;
+  padding: 20px 68px 20px 67px;
+  position: absolute;
+  top: 0;
+}
+
+.index .text-wrapper-3 {
+  color: #292e36;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  margin-top: -2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index .working-hour {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  width: 266px;
+}
+
+.index .sub-title-2 {
+  height: 24px;
+  margin-right: -2px;
+  position: relative;
+  width: 186px;
+}
+
+.index .line-3 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 23px;
+  width: 180px;
+}
+
+.index .line-4 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: 180px;
+}
+
+.index .mon-thu {
+  color: transparent;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 33.9px;
+  position: relative;
+  text-align: right;
+  width: 266px;
+}
+
+.index .bottom {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  width: 1920px;
+}
+
+.index .line-5 {
+  height: 1px;
+  margin-top: -1px;
+  object-fit: cover;
+  position: relative;
+  width: 1920px;
+}
+
+.index .copyright {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 382px;
+  position: relative;
+}
+
+.index .copyright-bebek {
+  color: transparent;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.3px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index .styleguide-licenses {
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.3px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index .feature {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  left: 272px;
+  position: absolute;
+  top: 2912px;
+  width: 1376px;
+}
+
+.index .element {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 293px;
+  position: relative;
+  width: 1376px;
+}
+
+.index .content-wrapper {
+  height: 390px;
+  position: relative;
+  width: 396px;
+}
+
+.index .content-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  left: -2px;
+  position: relative;
+  width: 398px;
+}
+
+.index .content-3 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+  width: 398px;
+}
+
+.index .title {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 19px;
+  position: relative;
+  width: 336px;
+}
+
+.index .feature-2 {
+  color: #292e36;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  left: 2px;
+  letter-spacing: 4.05px;
+  line-height: 11.6px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  white-space: nowrap;
+}
+
+.index .always-fresh {
+  color: #292e36;
+  font-family: "Cormorant Infant", Helvetica;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 70.3px;
+  position: relative;
+  width: fit-content;
+}
+
+.index .the-people-food-and {
+  color: #555555;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.3px;
+  margin-right: -140px;
+  position: relative;
+  width: 538px;
+}
+
+.index .button-2 {
+  all: unset;
+  align-items: center;
+  border: 2px solid;
+  border-color: #e1b068;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 48px;
+  position: relative;
+}
+
+.index .text-wrapper-4 {
+  color: #e1b068;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  margin-top: -2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index .image {
+  height: 527px;
+  position: relative;
+  width: 687px;
+}
+
+.index .element-2 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 44px;
+  position: relative;
+  width: 1376px;
+}
+
+.index .we-invite-you-to {
+  color: #292e36;
+  font-family: "Cormorant Infant", Helvetica;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 70.3px;
+  margin-right: -162px;
+  position: relative;
+  width: fit-content;
+}
+
+.index .p {
+  color: #555555;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.3px;
+  margin-right: -127px;
+  position: relative;
+  width: 525px;
+}
+
+.index .reserverd {
+  height: 560px;
+  left: 0;
+  position: absolute;
+  top: 2152px;
+  width: 1921px;
+}
+
+.index .overlap {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/6555a2fb16d3217e1f53ef02/img/image-7.png);
+  background-size: 100% 100%;
+  height: 560px;
+  width: 1920px;
+}
+
+.index .heading {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  left: 272px;
+  position: relative;
+  top: 93px;
+  width: 444px;
+}
+
+.index .content-4 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 34px;
+  position: relative;
+  width: 444px;
+}
+
+.index .title-2 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  width: 444px;
+}
+
+.index .sub-title-3 {
+  height: 24px;
+  position: relative;
+  width: 149px;
+}
+
+.index .reservation {
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 4.05px;
+  line-height: 11.6px;
+  position: absolute;
+  text-align: center;
+  top: 7px;
+  white-space: nowrap;
+}
+
+.index .line-6 {
+  height: 1px;
+  left: 1px;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: 146px;
+}
+
+.index .line-7 {
+  height: 1px;
+  left: 1px;
+  object-fit: cover;
+  position: absolute;
+  top: 23px;
+  width: 146px;
+}
+
+.index .this-evening-will-be {
+  color: #ffffff;
+  font-family: "Cormorant Infant", Helvetica;
+  font-size: 85px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 76.2px;
+  position: relative;
+  width: fit-content;
+}
+
+.index .don-t-miss-out-on {
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 19px;
+  position: relative;
+  width: 398px;
+}
+
+.index .button-3 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 87px;
+  position: relative;
+  width: 442px;
+}
+
+.index .button-4 {
+  all: unset;
+  align-items: center;
+  border: 2px solid;
+  border-color: #e1b068;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 50px;
+  position: relative;
+}
+
+.index .button-5 {
+  all: unset;
+  box-sizing: border-box;
+  height: 28px;
+  margin-right: -2px;
+  position: relative;
+  width: 126px;
+}
+
+.index .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.index .portfolio {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 94px;
+  left: 272px;
+  position: absolute;
+  top: 866px;
+  width: 1376px;
+}
+
+.index .image-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.index .element-3 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 32px;
+  position: relative;
+  width: 1376px;
+}
+
+.index .overlap-group-wrapper {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/6555a2fb16d3217e1f53ef02/img/image-8.png);
+  background-size: 100% 100%;
+  height: 428px;
+  position: relative;
+  width: 672px;
+}
+
+.index .overlap-group-2 {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/65322e976b17d0ccb481631b/img/background.svg);
+  background-size: 100% 100%;
+  height: 582px;
+  left: -82px;
+  position: relative;
+  top: -70px;
+  width: 826px;
+}
+
+.index .content-5 {
+  height: 31px;
+  left: 256px;
+  position: relative;
+  top: 254px;
+  width: 327px;
+}
+
+.index .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Cormorant Infant", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 30.8px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.index .element-4 {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/6555a2fb16d3217e1f53ef02/img/photo@2x.png);
+  background-size: 100% 100%;
+  height: 428px;
+  position: relative;
+  width: 320px;
+}
+
+.index .element-5 {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/6555a2fb16d3217e1f53ef02/img/image-9@2x.png);
+  background-size: 100% 100%;
+  height: 428px;
+  position: relative;
+  width: 320px;
+}
+
+.index .element-6 {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/6555a2fb16d3217e1f53ef02/img/photo-1@2x.png);
+  background-size: 100% 100%;
+  height: 428px;
+  position: relative;
+  width: 320px;
+}
+
+.index .element-7 {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/6555a2fb16d3217e1f53ef02/img/image-10@2x.png);
+  background-size: 100% 100%;
+  height: 428px;
+  position: relative;
+  width: 320px;
+}
+
+.index .element-8 {
+  background-image: url(https://cdn.animaapp.com/projects/65322e0cd2f69387b8ca88c4/releases/6555a2fb16d3217e1f53ef02/img/image-11.png);
+  background-size: 100% 100%;
+  height: 428px;
+  position: relative;
+  width: 672px;
+}
+
+.index .banner {
+  background-color: #292e36;
+  height: 666px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.index .menu-title {
+  height: 68px;
+  left: 852px;
+  position: absolute;
+  top: 498px;
+  width: 220px;
+}
+
+.index .line-8 {
+  height: 1px;
+  left: 16px;
+  object-fit: cover;
+  position: absolute;
+  top: 67px;
+  width: 185px;
+}
+
+.index .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "Cormorant Infant", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 46.3px;
+  position: absolute;
+  text-align: center;
+  top: 11px;
+  white-space: nowrap;
+}
+
+.index .line-9 {
+  height: 1px;
+  left: 16px;
+  object-fit: cover;
+  position: absolute;
+  top: -1px;
+  width: 185px;
+}
+
+.index .header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 66px;
+  left: 2px;
+  position: absolute;
+  top: 65px;
+  width: 1917px;
+}
+
+.index .logo-2 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 268px;
+  justify-content: center;
+  position: relative;
+  width: 1378px;
+}
+
+.index .button-6 {
+  all: unset;
+  align-items: center;
+  border: 2px solid;
+  border-color: #e1b068;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  margin-left: -12px;
+  padding: 21px 37px 22px;
+  position: relative;
+}
+
+.index .text-wrapper-8 {
+  color: #dedede;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 25.3px;
+  margin-top: -2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index .logo-3 {
+  height: 187.08px;
+  position: relative;
+  width: 378px;
+}
+
+.index .button-7 {
+  all: unset;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  gap: 46px;
+  justify-content: flex-end;
+  margin-right: -12px;
+  position: relative;
+  width: 232px;
+}
+
+.index .cart {
+  height: 30.04px;
+  margin-left: -77.26px;
+  position: relative;
+  width: 32.26px;
+}
+
+.index .button-8 {
+  all: unset;
+  align-items: center;
+  background-color: #e1b068;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 58px 20px 57px;
+  position: relative;
+}
+
+.index .text-wrapper-9 {
+  color: #292e36;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 27.8px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.index .menu {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+  position: relative;
+  width: 1917px;
+}
+
+.index .line-10 {
+  height: 1px;
+  margin-top: -1px;
+  object-fit: cover;
+  position: relative;
+  width: 1917px;
+}
+
+.index .content-6 {
+  height: 25px;
+  position: relative;
+  width: 1376.33px;
+}
+
+.index .homes-about-menu {
+  color: #dedede;
+  font-family: "Josefin Sans", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 25.3px;
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: 833px;
+}
+
+.index .social-media-icon-2 {
+  height: 23px;
+  left: 1219px;
+  position: absolute;
+  top: 1px;
+  width: 157px;
+}
+
+.index .line-11 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 1917px;
+}
