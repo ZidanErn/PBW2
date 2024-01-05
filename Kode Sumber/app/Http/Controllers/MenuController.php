@@ -22,7 +22,7 @@ class MenuController extends Controller
     public function index()
     {
         return view('admin.' . $this->viewIndex, [
-            'models' => Model::latest()->paginate(10),
+            'models' => Model::latest()->get(),
             'routePrefix' => $this->routePrefix,
             'title' => 'Data Menu'
         ]);
@@ -49,15 +49,16 @@ class MenuController extends Controller
     public function store(StoreMenuRequest $request)
     {        
         DB::beginTransaction();
-        try {
+        try {            
 
             $menu = Model::create([
                 'name' => $request['name'],
                 'price' => $request['price'],
-                'stock' => $request['stock'],
-                'description' => $request['description'], 
-                'image' => $request->image->store('public/menus')                    
-            ]);        
+                'description' => $request['description'],
+                'category' => $request['category'],
+                'tags' => $request['tags'],
+                'image' => $request->file('image')->store('public/menus'),            
+            ]);
 
             DB::commit();
             session()->flash('success', 'Menu Berhasil Ditambahkan');
@@ -105,13 +106,14 @@ class MenuController extends Controller
     {        
         DB::beginTransaction();
         try {
-
-            $menuUpdate = [
+            
+           $menuUpdate = [
                 'name' => $request['name'],
                 'price' => $request['price'],
                 'description' => $request['description'],
-                                                   
-            ]; 
+                'category' => $request['category'],
+                'tags' => $request['tags'],            
+            ];
 
             $model = Model::findOrFail($menu->id);
             

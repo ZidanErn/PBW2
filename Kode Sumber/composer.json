@@ -10,8 +10,10 @@
         "laravel/breeze": "^1.26",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
+        "laravel/socialite": "^5.11",
         "laravel/tinker": "^2.8",
         "laravelcollective/html": "^6.4",
+        "nicolaslopezj/searchable": "^1.13",
         "spatie/laravel-permission": "^6.1"
     },
     "require-dev": {

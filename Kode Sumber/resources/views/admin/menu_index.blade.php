@@ -20,8 +20,7 @@
                         <tr>
                             <th>No</th>
                             <th>Menu Name</th>
-                            <th>Price</th>
-                            <th>Stock</th>
+                            <th>Price</th>                            
                             <th>Image</th>
                             <th>Aksi</th>
                         </tr>
@@ -31,8 +30,7 @@
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>{{ $item->name }}</td>
-                                <td>{{ $item->price }}</td>
-                                <td>{{ $item->stock }}</td>
+                                <td>{{ $item->price }}</td>                                
                                 <td style="width: 150px;">
                                     <img src="{{ \Storage::url($item->image) }}" alt="{{ $item->name }}">
                                 </td>
@@ -72,7 +70,11 @@
         @push('datatables')
             <script>
                 $(document).ready(function() {
-                    $('#menuDataTables').DataTable();
+                    $('#menuDataTables').DataTable({
+                        "scrollY": "490px",
+        "scrollCollapse": true,
+        "paging": true,
+                });
                 });                
             </script> 
             <script>

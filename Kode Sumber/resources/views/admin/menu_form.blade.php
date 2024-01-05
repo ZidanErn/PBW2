@@ -18,11 +18,44 @@
                 ]) !!}               
             </div>         
             <div class="mb-5">
-                <label for="stock" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Stock</label>
-                {!! Form::number('stock', null, [
+                <label for="stock" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+               {!! Form::select('category', [
+                'Main Course' => 'Main Course',
+                'Second Course' => 'Second Course',
+                'Third Course' => 'Third Course',
+                'Appetizer' => 'Appetizer',
+                'Soup' => 'Soup',
+                'Salad' => 'Salad',
+                'Bread' => 'Bread',
+                'Sauce' => 'Sauce',
+                'Breakfast' => 'Breakfast',
+                'Brunch' => 'Brunch',
+                'Lunch' => 'Lunch',
+                'Dinner' => 'Dinner',
+                'Side' => 'Side Dish',
+                'Snack' => 'Snack',
+                'Tea' => 'Tea',
+                'Supper' => 'Supper',
+                'Sweets' => 'Sweets',                                
+                'Dessert' => 'Dessert Course',
+                'Drink' => 'Drink',  
+                'Cocktail' => 'Cocktail',
+                'Wine' => 'Wine',
+                'Beer' => 'Beer',
+                'Mocktail' => 'Mocktail',
+                'Coffee' => 'Coffee',                              
+               ], null, [
                     'class' => 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500',
-                ]) !!}               
-            </div>           
+               ]) !!}             
+            </div> 
+            <div class="mb-5">
+                <label for="tags" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Tags, Example : (Recipes, Sweet, Tasty)</label>
+                {!! Form::text('tags', null, [
+                    'class' => 'w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none',                    
+                    'minlength' => '10', // Minimum length
+                    'maxlength' => '200', // Maximum length
+                ]) !!}
+            </div>          
             <div class="mb-5">
                 <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
                 {!! Form::textarea('description', null, [

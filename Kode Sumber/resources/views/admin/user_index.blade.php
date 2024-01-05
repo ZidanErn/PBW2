@@ -66,7 +66,11 @@
         @push('datatables')
             <script>
                 $(document).ready(function() {
-                    $('#menuDataTables').DataTable();
+                    $('#menuDataTables').DataTable({
+                        "scrollY": "490px",
+        "scrollCollapse": true,
+        "paging": true,
+                });
                 });
             </script>
             <script>

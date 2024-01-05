@@ -22,7 +22,7 @@ class UserController extends Controller
     public function index()
     {
         return view('admin.' . $this->viewIndex, [
-            'models' => Model::latest()->paginate(10),
+            'models' => Model::latest()->get(),
             'routePrefix' => $this->routePrefix,
             'title' => 'Data User'
         ]);

@@ -29,10 +29,10 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        if (Auth::user()->getRoleNames()[0]) {
-            return redirect()->route('admin.home_index');
+        if (Auth::user()->getRoleNames()[0] == 'admin') {
+            return redirect()->route('admin.reservation.index')->with('success', 'Login Berhasil, Selamat datang kembali ' . auth()->user()->name);
         } else {
-            return redirect()->route('dashboard');
+            return redirect()->route('homepage', '#home')->with('success', 'Login Berhasil, Selamat datang kembali ' . auth()->user()->name);
         }
     }
 

@@ -34,8 +34,12 @@
                         <td>: {{ $model->description }}</td>
                     </tr>
                     <tr>
-                        <td>Stock</td>
-                        <td>: {{ $model->stock }}</td>
+                        <td>Category</td>
+                        <td>: {{ $model->category }}</td>
+                    </tr>
+                    <tr>
+                        <td>Tags</td>
+                        <td>: {{ $model->tags }}</td>
                     </tr>
                 </thead>
             </table>

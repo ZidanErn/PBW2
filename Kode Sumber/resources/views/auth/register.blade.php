@@ -1,52 +1,93 @@
 <x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
-        </div>
+    <div class="hidden md:col-span-2 md:h-screen md:block sm:hidden">
+        <img src="{{ asset('image 34.png') }}" alt="" class="object-cover h-full bg-center bg-cover aspect-auto">
+    </div>
+    <div class="col-span-3 md:col-span-1">
+        <!-- Session Status -->
+        <x-auth-session-status class="mb-4" :status="session('status')" />
+        <a href="{{ url()->previous() }}" style="font-family: 'Literata', serif;"
+            class="flex items-center gap-3 py-5 pl-3">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.7812 1.875L4.21875 7.5L10.7812 13.125V1.875Z" fill="black" />
+            </svg>
+            <div class="flex items-center justify-center">
+                <h1 class="text-sm font-light">Back to website</h1>
+            </div>
+        </a>
+        <form method="POST" action="{{ route('register.store') }}" class="flex flex-col gap-6 px-16 py-4" style="font-family: 'Literata', serif;">
+            @csrf
+            <h1 class="text-5xl font-bold">Sign Up</h1>
+            <h5 class="pl-1">
+                <span class="text-sm font-bold underline underline-offset-1">Sign up for a free account</span>
+                <span class="text-sm">or log in to get started with Bebek Ayayo</span>
+            </h5>
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+            <div class="flex flex-col gap-3">
+                {{-- Username --}}
+                <label for="name" class="pl-2 font-bold">Username</label>
+                <input type="text" name="name"
+                    class="bg-[#FEC6A5]/[.35] text-black rounded-full  border-[#eab59a] pl-6 placeholder:text-black-100/20"
+                    placeholder="abc123">
+            </div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
+            <div class="flex flex-col gap-3">
+                {{-- Email --}}
+                <label for="email" class="pl-2 font-bold">Email</label>
+                <input type="email" name="email"
+                    class="bg-[#FEC6A5]/[.35] text-black rounded-full  border-[#eab59a] pl-6 placeholder:text-black-100/20"
+                    placeholder="abc123@gmail.com">
+            </div>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+            <div class="flex flex-col gap-3">
+                {{-- Phone --}}
+                <label for="phone" class="pl-2 font-bold">Phone</label>
+                <input type="tel" name="phone"
+                    class="bg-[#FEC6A5]/[.35] text-black rounded-full  border-[#eab59a] pl-6 placeholder:text-black-100/20"
+                    placeholder="08328682363">
+            </div>
 
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+            <div class="flex flex-col gap-3">
+                {{-- password --}}
+                <label for="password" class="pl-2 font-bold">Password</label>
+                <input type="password" name="password"
+                    class="bg-[#FEC6A5]/[.35] text-black rounded-full  border-[#eab59a] pl-6 placeholder:text-black-100/20"
+                    placeholder="**********">
+            </div>
 
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
+            <button type="submit" class="bg-[#1F242C] w-full rounded-full h-10 text-white mt-6">
+                Sign Up
+            </button>
 
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
+            <h1 class="font-bold text-center">Or</h1>
 
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
+            <a href="{{ URL::to('googleLogin') }}"
+                class="bg-[#FEC6A5] text-black w-full rounded-full h-10 flex justify-center items-center">
+                <div class="flex items-center justify-center gap-3">
+                    <span>
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.4404 11.7138H24.5007V11.6654H14.0007V16.332H20.5941C19.6322 19.0486 17.0474 20.9987 14.0007 20.9987C10.1349 20.9987 7.00065 17.8644 7.00065 13.9987C7.00065 10.1329 10.1349 6.9987 14.0007 6.9987C15.7851 6.9987 17.4085 7.67186 18.6446 8.77145L21.9445 5.47153C19.8608 3.52961 17.0737 2.33203 14.0007 2.33203C7.55773 2.33203 2.33398 7.55578 2.33398 13.9987C2.33398 20.4416 7.55773 25.6654 14.0007 25.6654C20.4436 25.6654 25.6673 20.4416 25.6673 13.9987C25.6673 13.2164 25.5868 12.4529 25.4404 11.7138Z"
+                                fill="#FFC107" />
+                            <path
+                                d="M3.67773 8.56845L7.51082 11.3795C8.54798 8.8117 11.0598 6.9987 13.9992 6.9987C15.7837 6.9987 17.4071 7.67186 18.6432 8.77145L21.9431 5.47153C19.8594 3.52961 17.0722 2.33203 13.9992 2.33203C9.51807 2.33203 5.6319 4.86195 3.67773 8.56845Z"
+                                fill="#FF3D00" />
+                            <path
+                                d="M13.9995 25.6651C17.013 25.6651 19.7512 24.5119 21.8214 22.6364L18.2106 19.5809C16.9999 20.5017 15.5205 20.9997 13.9995 20.9984C10.965 20.9984 8.38845 19.0635 7.41778 16.3633L3.61328 19.2945C5.54411 23.0728 9.46528 25.6651 13.9995 25.6651Z"
+                                fill="#4CAF50" />
+                            <path
+                                d="M25.4398 11.7164H24.5V11.668H14V16.3346H20.5934C20.1333 17.6275 19.3045 18.7573 18.2093 19.5844L18.2111 19.5832L21.8219 22.6387C21.5664 22.8709 25.6667 19.8346 25.6667 14.0013C25.6667 13.2191 25.5862 12.4555 25.4398 11.7164Z"
+                                fill="#1976D2" />
+                        </svg>
+                    </span>Sign Up with Google
+
+                </div>
             </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
+            <a href="{{ route('login') }}" class="mt-2 text-center underline underline-offset-1">if you have an
+                account</a>
+        </form>
+    </div>
+    </div>
 </x-guest-layout>

@@ -38,29 +38,29 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
+<body>  
     <div>
         {{-- Header --}}
-        <nav class="bg-white border-b border-gray-200 fixed z-30 w-full">
+        <nav class="bg-[#292E36] border-b border-gray-200 fixed z-10 w-full">         
             <div class="px-3 py-3 lg:px-5 lg:pl-3">
                 <div class="flex items-center justify-between">
                     <div class="flex items-center justify-start">
                         <button id="toggleSidebarMobile" aria-expanded="true" aria-controls="sidebar"
-                            class="lg:hidden mr-2 text-gray-600 hover:text-gray-900 cursor-pointer p-2 hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100 rounded">
+                            class="p-2 mr-2 text-gray-600 rounded cursor-pointer lg:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100">
                             <svg id="toggleSidebarMobileHamburger" class="w-6 h-6" fill="currentColor"
                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                                     clip-rule="evenodd"></path>
                             </svg>
-                            <svg id="toggleSidebarMobileClose" class="w-6 h-6 hidden" fill="currentColor"
+                            <svg id="toggleSidebarMobileClose" class="hidden w-6 h-6" fill="currentColor"
                                 viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd"
                                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                                     clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <a href="{{ route('admin.home_index') }}" class="text-xl font-bold flex items-center lg:ml-2.5">                    
+                        <a  class="text-xl font-bold flex items-center lg:ml-2.5">                    
                             <span class="self-center whitespace-nowrap">
                                <img src="{{ asset('logo.svg') }}" alt="logo" class="w-10">
                                     
@@ -70,12 +70,12 @@
                     <div class="flex items-center">
                         {{-- Toggle Mobile Nav --}}
                         <button id="toggleSidebarMobileSearch" type="button"
-                            class="lg:hidden text-gray-500 hover:text-gray-900 hover:bg-gray-100 p-2 rounded-lg"></button>
-                        <div class="space-x-4 flex">
-                            <button class="border-2 p-2 rounded-lg mx-auto flex items-center shadow-sm">
-                                <i class="fas fa-user text-gray-500 text-lg ml-4"></i>
-                                <p class="font-medium text-gray-500 mx-2">Admin</p>
-                                {{-- <span class="indicator-item indicator-top indicator-end badge badge-secondary py-3 font-semibold text-gray-500"><i class="fas fa-bell text-gray-500 text-lg"></i>&nbsp;99+</span> --}}
+                            class="p-2 text-gray-500 rounded-lg lg:hidden hover:text-gray-900 hover:bg-gray-100"></button>
+                        <div class="flex space-x-4 text-white">
+                            <button class="flex items-center p-2 mx-auto border-2 rounded-lg shadow-sm">
+                                <i class="ml-4 text-lg fas fa-user"></i>
+                                <p class="mx-2 font-medium">{{ auth()->user()->name }}</p>
+                                {{-- <span class="py-3 font-semibold text-gray-500 indicator-item indicator-top indicator-end badge badge-secondary"><i class="text-lg text-gray-500 fas fa-bell"></i>&nbsp;99+</span> --}}
                             </button>
                         </div>
                     </div>
@@ -85,39 +85,58 @@
         {{-- Header END --}}
 
         {{-- Side Bar-Left --}}
-        <div class="flex overflow-hidden bg-white pt-16">
+        <div class="flex pt-16 overflow-hidden ">
             <aside id="sidebar"
-                class="fixed hidden z-20 h-full top-0 left-0 pt-16 flex lg:flex flex-shrink-0 flex-col w-64 transition-width duration-75"
+                class="fixed top-0 left-0 z-[5] flex flex-col flex-shrink-0 hidden w-64 h-full pt-16 duration-75 lg:flex transition-width"
                 aria-label="Sidebar">
-                <div class="relative flex-1 flex flex-col min-h-0 border-r border-gray-200 bg-white pt-0">
-                    <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-                        <div class="flex-1 px-3 bg-white divide-y space-y-1">
-                            <ul class="space-y-2 pb-2">
-                                <li>
+                <div class="relative flex flex-col flex-1 min-h-0 pt-0 bg-white border-r border-gray-200">
+                    <div class="flex flex-col flex-1 pt-5 pb-4 overflow-y-auto">
+                        <div class="flex-1 px-3 space-y-1 bg-white divide-y">
+                            <ul class="pb-2 space-y-2">
+                                {{-- <li>
                                     <a href="#"
-                                        class="text-base text-gray-900 font-normal rounded-lg flex items-center p-2 hover:bg-gray-100 group">
-                                        <svg class="w-6 h-6 text-gray-500 group-hover:text-gray-900 transition duration-75"
+                                        class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100 group">
+                                        <svg class="w-6 h-6 text-gray-500 transition duration-75 group-hover:text-gray-900"
                                             fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
                                             <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                                         </svg>
                                         <span class="ml-3">Dashboard</span>
                                     </a>
-                                </li>                            
+                                </li>                             --}}
                                 <li>
                                     <a href="{{ route('admin.user.index') }}"
                                         class="{{ \Route::is('admin.user.*') ? 'text-[#E1B168] font-bold' : "text-black"}} text-base  font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
-                                        <i class="fa-solid fa-user pl-1 w-6 h-full my-auto"></i>
-                                        <span class="ml-3 flex-1 whitespace-nowrap">User</span>
+                                        <i class="w-6 h-full pl-1 my-auto fa-solid fa-user"></i>
+                                        <span class="flex-1 ml-3 whitespace-nowrap">User</span>
                                     </a>
                                 </li>          
                                 <li>
                                     <a href="{{ route('admin.menu.index') }}"
                                         class="{{ \Route::is('admin.menu.*') ? 'text-[#E1B168] font-bold' : "text-black"}} text-base  font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
-                                        <i class="fa-solid fa-bowl-food pl-1 w-6 h-full my-auto"></i>
-                                        <span class="ml-3 flex-1 whitespace-nowrap">Menu</span>
+                                        <i class="w-6 h-full pl-1 my-auto fa-solid fa-bowl-food"></i>
+                                        <span class="flex-1 ml-3 whitespace-nowrap">Menu</span>
                                     </a>
-                                </li>                                
+                                </li>  
+
+                                <li>
+                                    <a href="{{ route('admin.reservation.index') }}"
+                                        class="{{ \Route::is('admin.reservation.*') ? 'text-[#E1B168] font-bold' : "text-black"}} text-base  font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
+                                        <i class="w-6 h-full pl-1 my-auto fa-solid fa-receipt"></i>
+                                        <span class="flex-1 ml-3 whitespace-nowrap">Reservasi</span>
+                                    </a>
+                                </li>  
+                                <li>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                    <button onclick="event.preventDefault();
+                                    this.closest('form').submit();" class="relative flex items-center justify-start px-3 py-3 space-x-4 text-gray-500 rounded-lg group"
+                                        onclick="highlightSidebarItem(this)">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                        <a><span class="font-medium transition-all duration-200 ">Log Out</span></a>
+                                    </button>
+                                    </form>    
+                                </li>                
                                                      
                             </ul>                           
                         </div>
@@ -128,14 +147,14 @@
         {{-- Side Bar-Left End --}}
 
         {{-- Content --}}
-        <div class="bg-gray-900 opacity-50 hidden fixed inset-0 z-10" id="sidebarBackdrop"></div>
-        <div id="main-content" class="h-full max-w-6xl bg-gray-50 relative overflow-y-auto lg:ml-64 w-full ">
+        <div class="fixed inset-0 z-10 hidden bg-gray-900 opacity-50" id="sidebarBackdrop"></div>
+        <div id="main-content" class="relative w-full h-full max-w-6xl overflow-y-auto bg-gray-50 lg:ml-64 ">
             <main class="h-full ">
-                <div class="pt-6 pl-4 mb-24 w-full">
+                <div class="w-full pt-6 pl-4 mb-24">
                     <div
-                        class="max-w-6xl mx-auto w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        class="w-full max-w-6xl p-6 mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         @if ($errors->all())
-                        <div class="alert bg-red-500 flex flex-col gap-2 text-white font bold mb-5" role="alert">
+                        <div class="flex flex-col gap-2 mb-5 text-white bg-red-500 alert font bold" role="alert">
                             {!! implode('', $errors->all('<div>:message</div>')) !!}
                         </div>
                     @endif
@@ -146,7 +165,7 @@
         </div>
     </div>
     {{-- <div class="absolute inset-x-0 bottom-0">
-        <p class="text-center text-sm text-gray-500 my-10 w-full pl-64">
+        <p class="w-full pl-64 my-10 text-sm text-center text-gray-500">
             &copy; 2022-2023 <a href="#" class="hover:underline" target="_blank">Zidan</a>. All
             rights reserved.
         </p>

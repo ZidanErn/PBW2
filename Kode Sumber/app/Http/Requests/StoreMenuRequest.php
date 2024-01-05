@@ -24,7 +24,8 @@ class StoreMenuRequest extends FormRequest
         return [
             'name' => 'required|string|max:100|unique:users,name',
             'price' => 'required|integer',
-            'stock' => 'required|integer',
+            'tags' => 'required|string',            
+            'category' => 'required|string',
             'description' => 'required|string',            
             'image' => 'required|mimes:png,jpg,jpeg,svg',
         ];
