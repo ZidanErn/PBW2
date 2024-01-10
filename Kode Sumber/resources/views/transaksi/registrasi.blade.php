@@ -4,7 +4,7 @@
             {{ __('Tambah Transaksi') }}
         </h2>
     </x-slot>
-//Muhammad Zidan Ernandiaz_6706223117_4604
+{{-- //Muhammad Zidan Ernandiaz_6706223117_4604 --}}
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
